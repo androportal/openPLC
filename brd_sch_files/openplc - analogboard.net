@@ -1,0 +1,148 @@
+# EESchema Netlist Version 1.1 created  Ter 23 Out 22:53:33 2012
+(
+ ( /50873779 $noname  U1 LM358 {Lib=LM358}
+  (    1 /MB_1 )
+  (    2 /MB_1 )
+  (    3 /IN1+ )
+  (    4 GND )
+  (    5 /IN2+ )
+  (    6 /MB_2 )
+  (    7 /MB_2 )
+  (    8 +24V )
+ )
+ ( /50873778 $noname  R2 220R {Lib=R}
+  (    1 /IN2+ )
+  (    2 GND )
+ )
+ ( /50873777 $noname  D2 1N4148 {Lib=DIODE}
+  (    1 GND )
+  (    2 /IN2+ )
+ )
+ ( /50873772 $noname  D4 1N4148 {Lib=DIODE}
+  (    1 GND )
+  (    2 /IN4+ )
+ )
+ ( /50873771 $noname  R4 220R {Lib=R}
+  (    1 /IN4+ )
+  (    2 GND )
+ )
+ ( /50873770 $noname  U2 LM358 {Lib=LM358}
+  (    1 /MB_3 )
+  (    2 /MB_3 )
+  (    3 /IN3+ )
+  (    4 GND )
+  (    5 /IN4+ )
+  (    6 /MB_4 )
+  (    7 /MB_4 )
+  (    8 +24V )
+ )
+ ( /5087376B $noname  R3 220R {Lib=R}
+  (    1 /IN3+ )
+  (    2 GND )
+ )
+ ( /5087376A $noname  D3 1N4148 {Lib=DIODE}
+  (    1 GND )
+  (    2 /IN3+ )
+ )
+ ( /508731F2 $noname  D1 1N4148 {Lib=DIODE}
+  (    1 GND )
+  (    2 /IN1+ )
+ )
+ ( /5087319B $noname  R1 220R {Lib=R}
+  (    1 /IN1+ )
+  (    2 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component D4
+ D?
+ S*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D3
+ D?
+ S*
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "+24V" "+24V"
+ U1 8
+ U2 8
+Net 2 "/IN3+" "IN3+"
+ D3 2
+ R3 1
+ U2 3
+Net 3 "GND" "GND"
+ R4 2
+ U1 4
+ U2 4
+ R2 2
+ D4 1
+ D2 1
+ R3 2
+ D1 1
+ D3 1
+ R1 2
+Net 4 "/MB_3" "MB_3"
+ U2 2
+ U2 1
+Net 5 "/MB_1" "MB_1"
+ U1 1
+ U1 2
+Net 6 "/IN1+" "IN1+"
+ D1 2
+ U1 3
+ R1 1
+Net 7 "/IN2+" "IN2+"
+ U1 5
+ D2 2
+ R2 1
+Net 8 "/MB_2" "MB_2"
+ U1 6
+ U1 7
+Net 9 "/MB_4" "MB_4"
+ U2 6
+ U2 7
+Net 10 "/IN4+" "IN4+"
+ U2 5
+ D4 2
+ R4 1
+}
+#End

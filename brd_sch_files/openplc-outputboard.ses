@@ -1,0 +1,1211 @@
+
+(session "openplc-outputboard.ses"
+  (base_design "openplc-outputboard.dsn")
+  (placement
+    (resolution mil 10)
+    (component TO92
+      (place Q5 34500 -22500 front 90)
+      (place Q6 34500 -32000 front 90)
+      (place Q1 34500 -38500 front 90)
+      (place Q2 34500 -16000 front 90)
+    )
+    (component SO14E
+      (place U1 40000 -28500 front 180)
+    )
+    (component SM1206
+      (place R16 35000 -29000 front 180)
+      (place R15 35000 -27500 front 0)
+      (place R14 33000 -35000 front 0)
+      (place R13 33000 -25500 front 0)
+      (place R6 33000 -19000 front 0)
+      (place R7 35500 -41500 front 180)
+      (place R8 35500 -19000 front 180)
+      (place R5 33000 -41500 front 0)
+    )
+    (component SM0805
+      (place R1 26000 -40500 front 0)
+      (place R4 26000 -17000 front 0)
+      (place R2 26000 -18000 front 0)
+      (place R3 26000 -39500 front 0)
+      (place R9 26000 -24500 front 0)
+      (place R10 26000 -34000 front 0)
+      (place R11 26000 -23500 front 0)
+      (place R12 26000 -33000 front 0)
+    )
+    (component pin_array_4x2
+      (place P2 22500 -29000 back 90)
+    )
+    (component "LED-0805"
+      (place D1 26000 -41500 front 0)
+      (place D2 26000 -19000 front 180)
+      (place D6 26000 -35000 front 0)
+      (place D5 26000 -25500 front 0)
+    )
+    (component "G2R-1-E"
+      (place RLY1 43000 -25000 front 0)
+      (place RLY2 43000 -34500 front 0)
+    )
+    (component "DO-35"
+      (place D8 39000 -33000 front 0)
+      (place D7 39000 -23500 front 0)
+      (place D4 48500 -15000 front 0)
+      (place D3 49000 -41500 front 0)
+    )
+    (component "DIP-6__300_ELL"
+      (place U5 29500 -34000 front 270)
+      (place U4 29500 -24500 front 270)
+      (place U3 29500 -18000 front 270)
+      (place U2 29500 -40500 front 270)
+    )
+    (component D2PAK
+      (place Q3 41500 -39500 front 270)
+      (place Q4 41500 -17000 front 270)
+    )
+    (component bornier4
+      (place P1 57500 -27500 front 90)
+    )
+    (component bornier3
+      (place K1 57500 -20500 front 90)
+      (place K2 57500 -34500 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution mil 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(2012-01-19 BZR 3256)-stable")
+    )
+    (library_out 
+      (padstack "Via[0-1]_40:30_mil"
+        (shape
+          (circle Superior 400 0 0)
+        )
+        (shape
+          (circle Inferior 400 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_40:0_mil"
+        (shape
+          (circle Superior 400 0 0)
+        )
+        (shape
+          (circle Inferior 400 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net +24V
+        (wire
+          (path Superior 300
+            34350 -27500
+            33750 -27500
+          )
+        )
+        (wire
+          (path Superior 300
+            24203 -27429
+            33679 -27429
+            33750 -27500
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 24203 -27429
+        )
+        (wire
+          (path Inferior 300
+            22000 -27500
+            22554 -26946
+            23720 -26946
+            24203 -27429
+          )
+        )
+      )
+      (net +5V
+        (wire
+          (path Inferior 300
+            32037 -24080
+            32037 -19037
+            31000 -18000
+          )
+        )
+        (wire
+          (path Inferior 300
+            31702 -24500
+            32037 -24165
+            32037 -24080
+          )
+        )
+        (wire
+          (path Inferior 300
+            32037 -24080
+            40500 -24080
+          )
+        )
+        (wire
+          (path Inferior 300
+            31702 -24500
+            31704 -24502
+            31704 -26997
+            27480 -31221
+          )
+        )
+        (wire
+          (path Inferior 300
+            31626 -24500
+            31702 -24500
+          )
+        )
+        (wire
+          (path Inferior 300
+            27480 -31221
+            22721 -31221
+            22000 -30500
+          )
+        )
+        (wire
+          (path Inferior 300
+            30265 -34006
+            27480 -31221
+          )
+        )
+        (wire
+          (path Inferior 300
+            31000 -24500
+            31626 -24500
+          )
+        )
+        (wire
+          (path Inferior 300
+            30265 -34006
+            30994 -34006
+            31000 -34000
+          )
+        )
+        (wire
+          (path Inferior 300
+            31000 -40500
+            30265 -39765
+            30265 -34006
+          )
+        )
+        (wire
+          (path Superior 300
+            40500 -23500
+            41080 -23500
+          )
+        )
+        (wire
+          (path Superior 300
+            41080 -23500
+            42533 -22047
+            43000 -22047
+          )
+        )
+        (wire
+          (path Inferior 300
+            40500 -23500
+            40500 -24080
+          )
+        )
+        (wire
+          (path Inferior 300
+            40500 -24080
+            40559 -24139
+            40559 -29106
+            42767 -31313
+          )
+        )
+        (wire
+          (path Inferior 300
+            42767 -31313
+            43000 -31547
+          )
+        )
+        (wire
+          (path Inferior 300
+            41080 -33000
+            42767 -31313
+          )
+        )
+        (wire
+          (path Inferior 300
+            40500 -33000
+            41080 -33000
+          )
+        )
+        (wire
+          (path Superior 300
+            43000 -31547
+            41500 -30047
+            41500 -29500
+          )
+        )
+      )
+      (net /12V
+        (wire
+          (path Superior 300
+            36150 -40800
+            36206 -40744
+          )
+        )
+        (wire
+          (path Inferior 300
+            36375 -28974
+            36375 -40575
+            36206 -40744
+          )
+        )
+        (wire
+          (path Superior 300
+            36150 -41500
+            36150 -40800
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 36206 -40744
+        )
+        (wire
+          (path Inferior 300
+            38034 -24562
+            38034 -27315
+            36375 -28974
+          )
+        )
+        (wire
+          (path Superior 300
+            35650 -27500
+            35650 -28200
+          )
+        )
+        (wire
+          (path Superior 300
+            35894 -29000
+            36250 -29000
+          )
+        )
+        (wire
+          (path Superior 300
+            35650 -29000
+            35894 -29000
+          )
+        )
+        (wire
+          (path Superior 300
+            35650 -28200
+            35894 -28444
+            35894 -29000
+          )
+        )
+        (wire
+          (path Superior 300
+            36375 -28974
+            36276 -28974
+            36250 -29000
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 36375 -28974
+        )
+        (wire
+          (path Superior 300
+            36750 -19000
+            38034 -20284
+            38034 -24562
+          )
+        )
+        (wire
+          (path Superior 300
+            36150 -19000
+            36750 -19000
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 38034 -24562
+        )
+      )
+      (net /MB1
+        (wire
+          (path Superior 300
+            40500 -27400
+            40500 -27925
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -18000
+            25150 -18000
+          )
+        )
+        (wire
+          (path Superior 300
+            23300 -27500
+            23300 -19850
+            25150 -18000
+          )
+        )
+        (wire
+          (path Superior 300
+            23300 -27500
+            23600 -27500
+          )
+        )
+        (wire
+          (path Superior 300
+            23000 -27500
+            23300 -27500
+          )
+        )
+        (wire
+          (path Superior 300
+            23600 -27500
+            24436 -28336
+            34828 -28336
+            34914 -28422
+            34914 -29419
+            35217 -29722
+            36738 -29722
+            38535 -27925
+            40500 -27925
+          )
+        )
+      )
+      (net /MB2
+        (wire
+          (path Superior 300
+            39500 -26875
+            38827 -26202
+            25631 -26202
+          )
+        )
+        (wire
+          (path Superior 300
+            39500 -27400
+            39500 -26875
+          )
+        )
+        (wire
+          (path Superior 300
+            25150 -24500
+            25038 -24612
+            25038 -25781
+            25459 -26202
+            25631 -26202
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 25631 -26202
+        )
+        (wire
+          (path Inferior 300
+            23000 -28500
+            24210 -28500
+            25631 -27079
+            25631 -26202
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -24500
+            25150 -24500
+          )
+        )
+      )
+      (net /MB3
+        (wire
+          (path Superior 300
+            25154 -31654
+            26524 -30284
+            36826 -30284
+            38135 -28975
+            39000 -28975
+          )
+        )
+        (wire
+          (path Superior 300
+            25154 -31654
+            25154 -33529
+            25625 -34000
+          )
+        )
+        (wire
+          (path Superior 300
+            23000 -29500
+            25154 -31654
+          )
+        )
+        (wire
+          (path Superior 300
+            39000 -29500
+            39000 -28975
+          )
+        )
+      )
+      (net /MB4
+        (wire
+          (path Superior 300
+            41500 -27400
+            41500 -27925
+          )
+        )
+        (wire
+          (path Superior 300
+            25150 -35751
+            39584 -35751
+            43561 -31774
+            43561 -29986
+            41500 -27925
+          )
+        )
+        (wire
+          (path Superior 300
+            23000 -30500
+            23000 -33601
+            25150 -35751
+          )
+        )
+        (wire
+          (path Superior 300
+            25150 -35751
+            25150 -40500
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -40500
+            25150 -40500
+          )
+        )
+      )
+      (net /Out1+
+        (wire
+          (path Superior 300
+            50000 -15000
+            50580 -15000
+          )
+        )
+        (wire
+          (path Superior 300
+            57500 -18500
+            54080 -18500
+            50580 -15000
+          )
+        )
+        (wire
+          (path Inferior 300
+            57500 -18500
+            57500 -20500
+          )
+        )
+      )
+      (net "/Out1-"
+        (wire
+          (path Inferior 300
+            57500 -22500
+            54500 -22500
+            47000 -15000
+          )
+        )
+        (wire
+          (path Superior 300
+            42960 -17000
+            45426 -17000
+          )
+        )
+        (wire
+          (path Superior 300
+            45426 -17000
+            45426 -16574
+            47000 -15000
+          )
+        )
+      )
+      (net /Out2A
+        (wire
+          (path Superior 300
+            57500 -24500
+            55296 -24500
+            52843 -22047
+          )
+        )
+      )
+      (net /Out2B
+        (wire
+          (path Inferior 300
+            50874 -25000
+            50874 -22047
+          )
+        )
+        (wire
+          (path Superior 300
+            57500 -26500
+            52374 -26500
+            50874 -25000
+          )
+        )
+      )
+      (net /Out3A
+        (wire
+          (path Inferior 300
+            57500 -28500
+            55890 -28500
+            52843 -31547
+          )
+        )
+      )
+      (net /Out3B
+        (wire
+          (path Inferior 300
+            51643 -32316
+            50874 -31547
+          )
+        )
+        (wire
+          (path Inferior 300
+            56450 -30500
+            54634 -32316
+            51643 -32316
+          )
+        )
+        (wire
+          (path Inferior 300
+            50874 -34500
+            51643 -33731
+            51643 -32316
+          )
+        )
+        (wire
+          (path Inferior 300
+            57500 -30500
+            56450 -30500
+          )
+        )
+      )
+      (net /Out4+
+        (wire
+          (path Inferior 300
+            50500 -41500
+            51080 -41500
+          )
+        )
+        (wire
+          (path Inferior 300
+            57500 -34500
+            51080 -40920
+            51080 -41500
+          )
+        )
+        (wire
+          (path Inferior 300
+            57500 -32500
+            57500 -34500
+          )
+        )
+      )
+      (net "/Out4-"
+        (wire
+          (path Superior 300
+            47500 -40165
+            46091 -40165
+            45426 -39500
+          )
+        )
+        (wire
+          (path Superior 300
+            57500 -36500
+            51165 -36500
+            47500 -40165
+          )
+        )
+        (wire
+          (path Superior 300
+            47500 -40165
+            47500 -41500
+          )
+        )
+        (wire
+          (path Superior 300
+            42960 -39500
+            45426 -39500
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path Inferior 300
+            28000 -24500
+            24108 -24500
+            21445 -27163
+            21445 -27945
+            22000 -28500
+          )
+        )
+        (wire
+          (path Inferior 300
+            22000 -28500
+            22000 -29500
+          )
+        )
+        (wire
+          (path Superior 300
+            34000 -38000
+            34575 -38000
+          )
+        )
+        (wire
+          (path Superior 300
+            34575 -38000
+            34614 -37961
+            39798 -37961
+            39884 -38047
+            39884 -39011
+            39000 -39895
+          )
+        )
+        (wire
+          (path Superior 300
+            28750 -40500
+            31250 -38000
+            34000 -38000
+          )
+        )
+        (wire
+          (path Superior 300
+            39000 -40490
+            39000 -39895
+          )
+        )
+        (wire
+          (path Inferior 300
+            34350 -29710
+            34782 -29710
+            37092 -27400
+          )
+        )
+        (wire
+          (path Inferior 300
+            34000 -30925
+            34350 -30575
+            34350 -29710
+          )
+        )
+        (wire
+          (path Superior 300
+            38500 -27400
+            37092 -27400
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 37092 -27400
+        )
+        (wire
+          (path Inferior 300
+            34000 -31500
+            34000 -30925
+          )
+        )
+        (wire
+          (path Superior 300
+            34350 -29710
+            34350 -29000
+          )
+        )
+        (via "Via[0-1]_40:30_mil" 34350 -29710
+        )
+        (wire
+          (path Inferior 300
+            34000 -37425
+            33435 -36860
+            33435 -32065
+            34000 -31500
+          )
+        )
+        (wire
+          (path Superior 300
+            34000 -22000
+            34000 -21425
+          )
+        )
+        (wire
+          (path Superior 300
+            39000 -17990
+            36102 -17990
+            35596 -18496
+            35596 -19829
+            34000 -21425
+          )
+        )
+        (wire
+          (path Inferior 300
+            22000 -29500
+            21395 -30105
+            21395 -30822
+            24573 -34000
+            28000 -34000
+          )
+        )
+        (wire
+          (path Superior 300
+            28750 -22000
+            28750 -24500
+          )
+        )
+        (wire
+          (path Superior 300
+            26724 -19536
+            28750 -21562
+            28750 -22000
+          )
+        )
+        (wire
+          (path Superior 300
+            28750 -22000
+            33425 -22000
+          )
+        )
+        (wire
+          (path Superior 300
+            34000 -22000
+            33425 -22000
+          )
+        )
+        (wire
+          (path Superior 300
+            26724 -19536
+            27116 -19144
+            27116 -18884
+            28000 -18000
+          )
+        )
+        (wire
+          (path Superior 300
+            25587 -19536
+            26724 -19536
+          )
+        )
+        (wire
+          (path Superior 300
+            28000 -24500
+            28750 -24500
+          )
+        )
+        (wire
+          (path Inferior 300
+            34000 -38000
+            34000 -37425
+          )
+        )
+        (wire
+          (path Superior 300
+            28000 -40500
+            28750 -40500
+          )
+        )
+        (wire
+          (path Superior 300
+            27931 -40500
+            28000 -40500
+          )
+        )
+        (wire
+          (path Superior 300
+            27931 -40500
+            27250 -40500
+          )
+        )
+        (wire
+          (path Superior 300
+            25587 -19000
+            25587 -19536
+          )
+        )
+        (wire
+          (path Superior 300
+            28000 -34000
+            28750 -34000
+          )
+        )
+        (wire
+          (path Superior 300
+            28750 -34000
+            31250 -31500
+            34000 -31500
+          )
+        )
+        (wire
+          (path Superior 300
+            27931 -34000
+            28000 -34000
+          )
+        )
+        (wire
+          (path Superior 300
+            27931 -34000
+            27250 -34000
+          )
+        )
+        (wire
+          (path Superior 300
+            27931 -24500
+            28000 -24500
+          )
+        )
+        (wire
+          (path Superior 300
+            27931 -24500
+            27250 -24500
+          )
+        )
+        (wire
+          (path Superior 300
+            27250 -34000
+            27250 -34163
+            26413 -35000
+          )
+        )
+        (wire
+          (path Superior 300
+            27250 -24500
+            27250 -24663
+            26413 -25500
+          )
+        )
+        (wire
+          (path Superior 300
+            28000 -18000
+            28750 -18000
+          )
+        )
+        (wire
+          (path Superior 300
+            28750 -18000
+            31250 -15500
+            34000 -15500
+          )
+        )
+        (wire
+          (path Superior 300
+            27250 -40500
+            27250 -40663
+            26413 -41500
+          )
+        )
+      )
+      (net "N-000013"
+        (wire
+          (path Superior 300
+            28000 -23500
+            26375 -23500
+          )
+        )
+      )
+      (net "N-000014"
+        (wire
+          (path Superior 300
+            39000 -27400
+            39000 -27190
+            38573 -26763
+            24782 -26763
+            24589 -26570
+            24589 -24061
+            25150 -23500
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -23500
+            25150 -23500
+          )
+        )
+      )
+      (net "N-000015"
+        (wire
+          (path Superior 300
+            25587 -25500
+            25587 -25477
+            26375 -24689
+            26375 -24500
+          )
+        )
+      )
+      (net "N-000022"
+        (wire
+          (path Superior 300
+            28000 -33000
+            26375 -33000
+          )
+        )
+      )
+      (net "N-000023"
+        (wire
+          (path Superior 300
+            38500 -29500
+            38500 -30025
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -33000
+            25625 -32425
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -32425
+            27078 -30972
+            37553 -30972
+            38500 -30025
+          )
+        )
+      )
+      (net "N-000024"
+        (wire
+          (path Superior 300
+            25587 -35000
+            25587 -34977
+            26375 -34189
+            26375 -34000
+          )
+        )
+      )
+      (net "N-000027"
+        (wire
+          (path Superior 300
+            33650 -35000
+            33650 -32850
+            34000 -32500
+          )
+        )
+      )
+      (net "N-000028"
+        (wire
+          (path Superior 300
+            31000 -35000
+            32350 -35000
+          )
+        )
+      )
+      (net "N-000029"
+        (wire
+          (path Superior 300
+            39000 -16010
+            35490 -16010
+            35000 -16500
+          )
+        )
+        (wire
+          (path Superior 300
+            34850 -19000
+            34850 -16650
+            35000 -16500
+          )
+        )
+      )
+      (net "N-000030"
+        (wire
+          (path Superior 300
+            33650 -19000
+            33650 -16850
+            34000 -16500
+          )
+        )
+      )
+      (net "N-000033"
+        (wire
+          (path Superior 300
+            40000 -27400
+            40000 -26875
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -17000
+            25625 -16425
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -16425
+            27079 -14971
+            39511 -14971
+            39966 -15426
+            39966 -26841
+            40000 -26875
+          )
+        )
+      )
+      (net "N-000034"
+        (wire
+          (path Superior 300
+            26375 -18000
+            26375 -18575
+          )
+        )
+        (wire
+          (path Superior 300
+            26413 -19000
+            26413 -18613
+            26375 -18575
+          )
+        )
+      )
+      (net "N-000035"
+        (wire
+          (path Superior 300
+            31000 -19000
+            32350 -19000
+          )
+        )
+      )
+      (net "N-000036"
+        (wire
+          (path Superior 300
+            28000 -17000
+            26375 -17000
+          )
+        )
+      )
+      (net "N-000037"
+        (wire
+          (path Superior 300
+            25625 -38925
+            28297 -36253
+            39652 -36253
+            43964 -31941
+            43964 -29132
+            41707 -26875
+            41000 -26875
+          )
+        )
+        (wire
+          (path Superior 300
+            41000 -27400
+            41000 -26875
+          )
+        )
+        (wire
+          (path Superior 300
+            25625 -39500
+            25625 -38925
+          )
+        )
+      )
+      (net "N-000038"
+        (wire
+          (path Superior 300
+            25587 -41500
+            25587 -41477
+            26375 -40689
+            26375 -40500
+          )
+        )
+      )
+      (net "N-000039"
+        (wire
+          (path Superior 300
+            33650 -25500
+            33650 -23350
+            34000 -23000
+          )
+        )
+      )
+      (net "N-000040"
+        (wire
+          (path Superior 300
+            31000 -25500
+            32350 -25500
+          )
+        )
+      )
+      (net "N-000041"
+        (wire
+          (path Superior 300
+            33650 -41500
+            33650 -40800
+          )
+        )
+        (wire
+          (path Superior 300
+            33650 -40800
+            34000 -40450
+            34000 -39000
+          )
+        )
+      )
+      (net "N-000043"
+        (wire
+          (path Superior 300
+            31000 -41500
+            32350 -41500
+          )
+        )
+      )
+      (net "N-000044"
+        (wire
+          (path Superior 300
+            28000 -39500
+            26375 -39500
+          )
+        )
+      )
+      (net "N-000046"
+        (wire
+          (path Superior 300
+            39000 -38510
+            38070 -38510
+          )
+        )
+        (wire
+          (path Superior 300
+            38070 -38510
+            37580 -39000
+            35000 -39000
+          )
+        )
+        (wire
+          (path Superior 300
+            35000 -39000
+            35000 -40650
+            34850 -40800
+          )
+        )
+        (wire
+          (path Superior 300
+            34850 -41500
+            34850 -40800
+          )
+        )
+      )
+      (net "N-000047"
+        (wire
+          (path Superior 300
+            37500 -33000
+            35500 -33000
+            35000 -32500
+          )
+        )
+        (wire
+          (path Inferior 300
+            37500 -33000
+            39000 -34500
+            43000 -34500
+          )
+        )
+      )
+      (net "N-000048"
+        (wire
+          (path Inferior 300
+            37500 -23500
+            38034 -22966
+            40966 -22966
+            43000 -25000
+          )
+        )
+        (wire
+          (path Superior 300
+            37500 -23500
+            35500 -23500
+            35000 -23000
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,551 @@
+# EESchema Netlist Version 1.1 created  12/09/2012 11:51:08
+(
+ ( /5050909E $noname  R7 1k {Lib=R}
+  (    1 N-000052 )
+  (    2 +5V )
+ )
+ ( /50509095 $noname  D6 PWR_LED {Lib=LED}
+  (    1 N-000052 )
+  (    2 GND )
+ )
+ ( /505080C4 $noname  P2 PWR_CONN {Lib=CONN_2X2}
+  (    1 +24V )
+  (    2 +5V )
+  (    3 GND )
+  (    4 GND )
+ )
+ ( /5050808D $noname  P5 PWR_CONN {Lib=CONN_2X2}
+  (    1 +24V )
+  (    2 +5V )
+  (    3 GND )
+  (    4 GND )
+ )
+ ( /50508039 $noname  P6 OUTPUT {Lib=CONN_4X2}
+  (    1 /OUT_1 )
+  (    2 +24V )
+  (    3 /OUT_2 )
+  (    4 GND )
+  (    5 /OUT_3 )
+  (    6 GND )
+  (    7 /OUT_4 )
+  (    8 +5V )
+ )
+ ( /50507FA8 $noname  P3 ANALOG {Lib=CONN_4X2}
+  (    1 /AIN_1 )
+  (    2 +24V )
+  (    3 /AIN_2 )
+  (    4 GND )
+  (    5 /AIN_3 )
+  (    6 GND )
+  (    7 /AIN_4 )
+  (    8 +5V )
+ )
+ ( /50507F0A $noname  P4 INPUT {Lib=CONN_4X2}
+  (    1 /IN_1 )
+  (    2 +24V )
+  (    3 /IN_2 )
+  (    4 GND )
+  (    5 /IN_3 )
+  (    6 GND )
+  (    7 /IN_4 )
+  (    8 +5V )
+ )
+ ( /504F3612 $noname  D4 ES3J_600V_3A {Lib=DIODE}
+  (    1 GND )
+  (    2 N-000031 )
+ )
+ ( /504F32B1 $noname  F1 FUSE_3A {Lib=FUSE}
+  (    1 N-000030 )
+  (    2 +24V )
+ )
+ ( /504F329F $noname  R1 4k7 {Lib=R}
+  (    1 N-000027 )
+  (    2 GND )
+ )
+ ( /504F327F $noname  D5 1N5363BG {Lib=ZENER}
+  (    1 N-000027 )
+  (    2 +24V )
+ )
+ ( /504F3258 $noname  U1 C106D1G {Lib=SCR}
+  (    1 GND )
+  (    2 N-000027 )
+  (    3 +24V )
+ )
+ ( /504DF522 $noname  L1 100uH {Lib=INDUCTOR}
+  (    1 N-000026 )
+  (    2 +5V )
+ )
+ ( /504DF4E9 $noname  D3 1N5822 {Lib=DIODESCH}
+  (    1 GND )
+  (    2 N-000026 )
+ )
+ ( /504DF47F $noname  U2 S-5.0 {Lib=LM2576}
+  (    1 +24V )
+  (    2 N-000026 )
+  (    3 GND )
+  (    4 +5V )
+  (    5 GND )
+ )
+ ( /50462633 $noname  P8 I2C {Lib=CONN_2}
+  (    1 /I2C_SDA )
+  (    2 /I2C_SCL )
+ )
+ ( /5046235A $noname  P7 SPI {Lib=CONN_4}
+  (    1 /SPI_SS )
+  (    2 /SPI_MOSI )
+  (    3 /SPI_MISO )
+  (    4 /SPI_SCK )
+ )
+ ( /5046151E $noname  C3 1000uF {Lib=C}
+  (    1 GND )
+  (    2 +5V )
+ )
+ ( /504614F3 $noname  C2 100uF {Lib=C}
+  (    1 GND )
+  (    2 +24V )
+ )
+ ( /504612FB $noname  R5 1k {Lib=R}
+  (    1 N-000043 )
+  (    2 /CPU_RX )
+ )
+ ( /504612F7 $noname  R6 1k {Lib=R}
+  (    1 N-000039 )
+  (    2 /CPU_TX )
+ )
+ ( /50461273 $noname  R2 10k {Lib=R}
+  (    1 +5V )
+  (    2 /CPU_RESET )
+ )
+ ( /50461225 $noname  SW1 RESET {Lib=DPST}
+  (    1 /CPU_RESET )
+  (    2 GND )
+  (    3 /CPU_RESET )
+  (    4 GND )
+ )
+ ( /5046070D $noname  C5 100nF {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /50460602 $noname  X1 16MHz {Lib=CRYSTAL}
+  (    1 N-000041 )
+  (    2 N-000040 )
+ )
+ ( /5046059C $noname  C7 22pF {Lib=C}
+  (    1 N-000041 )
+  (    2 GND )
+ )
+ ( /50460585 $noname  C6 22pF {Lib=C}
+  (    1 N-000040 )
+  (    2 GND )
+ )
+ ( /5044D24D $noname  C4 100nF {Lib=C}
+  (    1 N-000050 )
+  (    2 /CPU_RESET )
+ )
+ ( /5044D1E5 $noname  R4 1k {Lib=R}
+  (    1 N-000049 )
+  (    2 +5V )
+ )
+ ( /5044D1D8 $noname  R3 1k {Lib=R}
+  (    1 N-000048 )
+  (    2 +5V )
+ )
+ ( /5044D1AB $noname  D2 TX_LED {Lib=LED}
+  (    1 N-000049 )
+  (    2 N-000029 )
+ )
+ ( /5044D18D $noname  D1 RX_LED {Lib=LED}
+  (    1 N-000048 )
+  (    2 N-000028 )
+ )
+ ( /5044CF68 $noname  J1 USB_2 {Lib=USB_2}
+  (    1 ? )
+  (    2 N-000047 )
+  (    3 N-000046 )
+  (    4 GND )
+ )
+ ( /5044CEAC $noname  C1 100nF {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /5044CD89 $noname  P1 PWR_24V {Lib=CONN_2}
+  (    1 N-000031 )
+  (    2 N-000030 )
+ )
+ ( /5044C422 $noname  U3 FT232RL {Lib=FT232RL}
+  (    1 /CPU_RX )
+  (    2 N-000050 )
+  (    3 ? )
+  (    4 +5V )
+  (    5 /CPU_TX )
+  (    6 ? )
+  (    7 GND )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+  (   15 N-000046 )
+  (   16 N-000047 )
+  (   17 ? )
+  (   18 GND )
+  (   19 +5V )
+  (   20 +5V )
+  (   21 GND )
+  (   22 N-000029 )
+  (   23 N-000028 )
+  (   25 GND )
+  (   26 GND )
+  (   27 ? )
+  (   28 ? )
+ )
+ ( /5044C1FA DIL28  IC1 ATMEGA328P-P {Lib=ATMEGA328P-P}
+  (    1 /CPU_RESET )
+  (    2 N-000043 )
+  (    3 N-000039 )
+  (    4 /IN_1 )
+  (    5 /IN_2 )
+  (    6 /IN_3 )
+  (    7 +5V )
+  (    8 GND )
+  (    9 N-000040 )
+  (   10 N-000041 )
+  (   11 /IN_4 )
+  (   12 /OUT_1 )
+  (   13 /OUT_2 )
+  (   14 /OUT_3 )
+  (   15 /OUT_4 )
+  (   16 /SPI_SS )
+  (   17 /SPI_MOSI )
+  (   18 /SPI_MISO )
+  (   19 /SPI_SCK )
+  (   20 +5V )
+  (   21 ? )
+  (   22 GND )
+  (   23 /AIN_1 )
+  (   24 /AIN_2 )
+  (   25 /AIN_3 )
+  (   26 /AIN_4 )
+  (   27 /I2C_SDA )
+  (   28 /I2C_SCL )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D4
+ D?
+ S*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D5
+ D?
+ SO*
+ SM*
+$endlist
+$component D3
+ D?
+ S*
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component IC1
+ 28DIP-ELL600
+ 28dip600
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 2 "/I2C_SDA" "I2C_SDA"
+ P8 1
+ IC1 27
+Net 3 "/I2C_SCL" "I2C_SCL"
+ IC1 28
+ P8 2
+Net 16 "/SPI_SCK" "SPI_SCK"
+ IC1 19
+ P7 4
+Net 17 "/SPI_MISO" "SPI_MISO"
+ IC1 18
+ P7 3
+Net 18 "/SPI_MOSI" "SPI_MOSI"
+ IC1 17
+ P7 2
+Net 19 "/SPI_SS" "SPI_SS"
+ P7 1
+ IC1 16
+Net 20 "+5V" "+5V"
+ R7 2
+ P5 2
+ U3 20
+ P4 8
+ C3 2
+ C5 1
+ U3 19
+ IC1 7
+ IC1 20
+ R2 1
+ U3 4
+ C1 1
+ P6 8
+ P3 8
+ R3 2
+ P2 2
+ R4 2
+ U2 4
+ L1 2
+Net 21 "/AIN_4" "AIN_4"
+ IC1 26
+ P3 7
+Net 22 "/AIN_3" "AIN_3"
+ IC1 25
+ P3 5
+Net 23 "/AIN_2" "AIN_2"
+ IC1 24
+ P3 3
+Net 24 "/AIN_1" "AIN_1"
+ IC1 23
+ P3 1
+Net 25 "/OUT_4" "OUT_4"
+ IC1 15
+ P6 7
+Net 26 "" ""
+ D3 2
+ L1 1
+ U2 2
+Net 27 "" ""
+ R1 1
+ D5 1
+ U1 2
+Net 28 "" ""
+ D1 2
+ U3 23
+Net 29 "" ""
+ D2 2
+ U3 22
+Net 30 "" ""
+ F1 1
+ P1 2
+Net 31 "" ""
+ D4 2
+ P1 1
+Net 32 "/OUT_1" "OUT_1"
+ P6 1
+ IC1 12
+Net 33 "/OUT_3" "OUT_3"
+ P6 5
+ IC1 14
+Net 34 "/OUT_2" "OUT_2"
+ P6 3
+ IC1 13
+Net 35 "/IN_4" "IN_4"
+ P4 7
+ IC1 11
+Net 36 "/IN_3" "IN_3"
+ IC1 6
+ P4 5
+Net 37 "/IN_2" "IN_2"
+ P4 3
+ IC1 5
+Net 38 "/IN_1" "IN_1"
+ IC1 4
+ P4 1
+Net 39 "" ""
+ IC1 3
+ R6 1
+Net 40 "" ""
+ C6 1
+ X1 2
+ IC1 9
+Net 41 "" ""
+ IC1 10
+ C7 1
+ X1 1
+Net 42 "/CPU_RESET" "CPU_RESET"
+ SW1 1
+ R2 2
+ IC1 1
+ C4 2
+ SW1 3
+Net 43 "" ""
+ IC1 2
+ R5 1
+Net 44 "/CPU_RX" "CPU_RX"
+ R5 2
+ U3 1
+Net 45 "/CPU_TX" "CPU_TX"
+ U3 5
+ R6 2
+Net 46 "" ""
+ U3 15
+ J1 3
+Net 47 "" ""
+ J1 2
+ U3 16
+Net 48 "" ""
+ R3 1
+ D1 1
+Net 49 "" ""
+ R4 1
+ D2 1
+Net 50 "" ""
+ C4 1
+ U3 2
+Net 51 "GND" "GND"
+ D4 1
+ P4 6
+ U3 18
+ U3 26
+ P6 4
+ P2 3
+ P3 6
+ P3 4
+ D6 2
+ D3 1
+ P4 4
+ U1 1
+ P2 4
+ P6 6
+ R1 2
+ P5 4
+ P5 3
+ SW1 2
+ SW1 4
+ C5 2
+ U2 5
+ U2 3
+ J1 4
+ C1 2
+ C2 1
+ U3 21
+ C6 2
+ IC1 8
+ IC1 22
+ U3 7
+ U3 25
+ C3 1
+ C7 2
+Net 52 "" ""
+ R7 1
+ D6 1
+Net 53 "+24V" "+24V"
+ P3 2
+ P4 2
+ C2 2
+ U1 3
+ P6 2
+ U2 1
+ P2 1
+ P5 1
+ D5 2
+ F1 2
+}
+#End
